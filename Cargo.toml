@@ -1,0 +1,14 @@
+[package]
+name = "un_ros_poc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+zenoh = { git = "https://github.com/eclipse-zenoh/zenoh.git", branch = "api-changes" }
+flume = "0.10.5"
+cdr = "0.2.4"
+serde = { version = "1.0.133", features = ["derive"] }
+tokio = { version = "1.15.0", features = ["full"] }
+futures = "0.3.19"
